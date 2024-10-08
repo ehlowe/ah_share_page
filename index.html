@@ -13,6 +13,33 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ehlowe.github.io/ah_share_page&summary=Check%20out%20this%20awesome%20game%21&title=My%20Game%20Title" target="_blank">Share on LinkedIn with image</a>
+    <style>
+        .linkedin-button {
+            padding: 10px 20px;
+            background-color: #0077B5;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .linkedin-button:hover {
+            background-color: #005f8d;
+        }
+    </style>
+    
+    <button onclick="shareOnLinkedIn()" class="linkedin-button">
+        Share on LinkedIn
+    </button>
+    
+    <script>
+        function shareOnLinkedIn() {
+            var url = "https://www.linkedin.com/sharing/share-offsite/?url=https://ehlowe.github.io/ah_share_page&summary=Check%20out%20this%20awesome%20game%21&title=My%20Game%20Title";
+            window.open(url, '_blank');
+        }
+    </script>
+    
 </body>
 </html>
